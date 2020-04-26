@@ -1,25 +1,27 @@
 @import "main";
 
 #main {
-  .message {
+  #container {
+    .message {
 
-    .body {
-      font-family: $font-serif;
+      .body {
+        font-family: $font-serif;
+      }
+
+      .sender {
+        font-family: $font-handwriting;
+      }
     }
 
-    .sender {
-      font-family: $font-handwriting;
+    .message:nth-child(even) {
+
+      .body {
+        text-align: justify;
+      }
     }
-  }
 
-  .message:nth-child(even) {
-
-    .body {
-      text-align: justify;
+    .message:nth-child(odd) {
+      text-align: right;
     }
-  }
-
-  .message:nth-child(odd) {
-    text-align: right;
   }
 }

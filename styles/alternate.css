@@ -103,16 +103,16 @@ html, body {
   text-align: right;
 }
 
-#main .message .body {
+#main #container .message .body {
   font-family: "Gentium Basic", serif;
 }
-#main .message .sender {
+#main #container .message .sender {
   font-family: "La Belle Aurore", cursive;
 }
-#main .message:nth-child(even) .body {
+#main #container .message:nth-child(even) .body {
   text-align: justify;
 }
-#main .message:nth-child(odd) {
+#main #container .message:nth-child(odd) {
   text-align: right;
 }
 
