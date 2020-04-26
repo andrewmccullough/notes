@@ -3,11 +3,11 @@
 
 $font-title: 'Playfair Display', serif;
 $font-handwriting: 'La Belle Aurore', cursive;
-$font-body: 'Gentium Basic', serif;
+$font-serif: 'Gentium Basic', serif;
 
-$color-yellow: #FDDC5C;
-$color-red: #FA4224;
-$color-blue: #475F94;
+$color-background: #FDDC5C;
+$color-accent-light: #FA4224;
+$color-accent-dark: #475F94;
 
 html, body {
   padding: 0;
@@ -21,10 +21,10 @@ html, body {
 
 #top-splash {
   padding: 7rem 5rem;
-  background: $color-red;
+  background: $color-accent-light;
 
   h1 {
-    color: $color-yellow;
+    color: $color-background;
     font-family: $font-title;
     font-size: 6rem;
   }
@@ -34,26 +34,26 @@ html, body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background: $color-blue;
+  background: $color-accent-dark;
   padding: 6rem 0 0 0;
 
   p {
     width: 90%;
     max-width: 50rem;
-    color: $color-yellow;
-    font-family: $font-body;
+    color: $color-background;
+    font-family: $font-serif;
     font-size: 1.3rem;
     line-height: 2.7rem;
   }
   ul {
     margin: 6rem 0;
-    font-family: $font-body;
+    font-family: $font-serif;
     font-size: 1.3rem;
     line-height: 2.2rem;
     list-style: none;
 
     li {
-      color: $color-red;
+      color: $color-accent-light;
 
       a::before {
         content: "\00BB\0020"
@@ -61,11 +61,11 @@ html, body {
       a {
         color: inherit;
         text-decoration: none;
-        border-bottom: 1px dotted $color-red;
+        border-bottom: 1px dotted $color-accent-light;
       }
       a:hover {
-        color: $color-yellow;
-        border-bottom: 1px dotted $color-yellow;
+        color: $color-background;
+        border-bottom: 1px dotted $color-background;
       }
     }
   }
@@ -75,7 +75,7 @@ html, body {
   display: flex;
   justify-content: center;
   padding: 6rem 0;
-  background: $color-yellow;
+  background: $color-background;
 
   #container {
     width: 90%;
@@ -105,7 +105,7 @@ html, body {
         text-align: right;
         font-size: 1.2rem;
         margin: 1.2rem 0 0 0;
-        font-family: $font-body;
+        font-family: $font-serif;
       }
       .sender::before {
         content: "\2014\2002";

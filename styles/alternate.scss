@@ -1,127 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Playfair+Display:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gentium+Basic&display=swap');
-
-$font-title: 'Playfair Display', serif;
-$font-handwriting: 'La Belle Aurore', cursive;
-$font-body: 'Gentium Basic', serif;
-
-$color-yellow: #FDDC5C;
-$color-red: #FA4224;
-$color-blue: #475F94;
-
-html, body {
-  padding: 0;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-#top-splash {
-  padding: 7rem 5rem;
-  background: $color-red;
-
-  h1 {
-    color: $color-yellow;
-    font-family: $font-title;
-    font-size: 6rem;
-  }
-}
-
-#background-info {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  background: $color-blue;
-  padding: 6rem 0 0 0;
-
-  p {
-    width: 90%;
-    max-width: 50rem;
-    color: $color-yellow;
-    font-family: $font-body;
-    font-size: 1.3rem;
-    line-height: 2.7rem;
-  }
-  ul {
-    margin: 6rem 0;
-    font-family: $font-body;
-    font-size: 1.3rem;
-    line-height: 2.2rem;
-    list-style: none;
-
-    li {
-      color: $color-red;
-
-      a::before {
-        content: "\00BB\0020"
-      }
-      a {
-        color: inherit;
-        text-decoration: none;
-        border-bottom: 1px dotted $color-red;
-      }
-      a:hover {
-        color: $color-yellow;
-        border-bottom: 1px dotted $color-yellow;
-      }
-    }
-  }
-}
+@import "main";
 
 #main {
-  display: flex;
-  justify-content: center;
-  padding: 6rem 0;
-  background: $color-yellow;
+  .message {
 
-  #container {
-    width: 90%;
-    max-width: 60rem;
-
-    h1 {
-      font-family: $font-title;
-      font-size: 3.2rem;
+    .body {
+      font-family: $font-serif;
     }
 
-    #general-messages, #personal-messages {
-      display: flex;
-      flex-direction: column;
+    .sender {
+      font-family: $font-handwriting;
     }
+  }
 
-    .message {
-      max-width: 43rem;
-      margin: 3rem 0;
+  .message:nth-child(even) {
 
-      .body {
-        font-family: $font-body;
-        font-size: 1.2rem;
-        line-height: 2rem;
-      }
-
-      .sender {
-        text-align: right;
-        font-size: 1.2rem;
-        margin: 1.2rem 0 0 0;
-        font-family: $font-handwriting;
-      }
-      .sender::before {
-        content: "\2014\2002";
-      }
+    .body {
+      text-align: justify;
     }
-    .message:nth-child(even) {
-      align-self: flex-start;
+  }
 
-      .body {
-        text-align: justify;
-      }
-    }
-
-    .message:nth-child(odd) {
-      align-self: flex-end;
-      text-align: right;
-    }
+  .message:nth-child(odd) {
+    text-align: right;
   }
 }

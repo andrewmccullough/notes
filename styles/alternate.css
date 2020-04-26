@@ -82,7 +82,7 @@ html, body {
   margin: 3rem 0;
 }
 #main #container .message .body {
-  font-family: "Gentium Basic", serif;
+  font-family: "La Belle Aurore", cursive;
   font-size: 1.2rem;
   line-height: 2rem;
 }
@@ -90,7 +90,7 @@ html, body {
   text-align: right;
   font-size: 1.2rem;
   margin: 1.2rem 0 0 0;
-  font-family: "La Belle Aurore", cursive;
+  font-family: "Gentium Basic", serif;
 }
 #main #container .message .sender::before {
   content: "— ";
@@ -98,11 +98,21 @@ html, body {
 #main #container .message:nth-child(even) {
   align-self: flex-start;
 }
-#main #container .message:nth-child(even) .body {
-  text-align: justify;
-}
 #main #container .message:nth-child(odd) {
   align-self: flex-end;
+  text-align: right;
+}
+
+#main .message .body {
+  font-family: "Gentium Basic", serif;
+}
+#main .message .sender {
+  font-family: "La Belle Aurore", cursive;
+}
+#main .message:nth-child(even) .body {
+  text-align: justify;
+}
+#main .message:nth-child(odd) {
   text-align: right;
 }
 
